@@ -5,7 +5,7 @@
  *
  *  headline   – big bold words at the top (+ small "for who" label)
  *  cards      – 2–4 cards fly out from your open palm, one by one
- *  compare    – two panels: left greyed with ⏸ (the old way), right gold (your way)
+ *  compare    – two panels: left greyed & crossed out (the old way), right gold (your way)
  *  bigNumber  – giant see-through number with a label
  *  checklist  – ✓ / ✕ list ("suits you / doesn't suit you")
  *  proof      – "REAL EXPERIENCE · with permission" chip + results-vary note
@@ -16,7 +16,7 @@ import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { z } from "zod";
 import { studioConfig } from "../../studio.config";
 import { fonts } from "../config/theme";
-import { CheckIcon, CrossIcon, PauseIcon } from "./Icons";
+import { CheckIcon, CrossIcon } from "./Icons";
 
 const time = { start: z.number().min(0), end: z.number().min(0) };
 
@@ -140,7 +140,7 @@ const Cards: React.FC<{ items: string[] }> = ({ items }) => {
   );
 };
 
-/** D4-style comparison — the old way is frozen in grey with a ⏸. */
+/** D4-style comparison — the old way is greyed and crossed out. */
 const Compare: React.FC<{ left: string; right: string }> = ({ left, right }) => {
   const { enter, opacity, frame, fps } = useBeatPresence();
   const second = spring({ frame: frame - 12, fps, config: { damping: 200 } });
@@ -163,7 +163,6 @@ const Compare: React.FC<{ left: string; right: string }> = ({ left, right }) => 
   return (
     <div style={{ position: "absolute", top: 240, left: 60, right: 60, display: "flex", gap: 22, opacity }}>
       <div style={{ ...panel, filter: "grayscale(1)", opacity: 0.75 * enter, color: "#CFCFCF", textDecoration: "line-through" }}>
-        <PauseIcon color="#CFCFCF" size={52} />
         {left}
       </div>
       <div
