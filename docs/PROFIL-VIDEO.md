@@ -47,11 +47,14 @@ Diringkaskan daripada 50 jawapan profil Coach, untuk kegunaan **video pendek sah
 
 ## Pagar video
 - Tiada harga, tiada nama produk dalam video, tiada janji kg/tempoh/pendapatan, tiada claim perubatan
-- Nama Herbalife: dalam caption sebagai **Ahli Bebas Herbalife**, ikut polisi syarikat
+- Nama Herbalife: BOLEH disebut dalam video dan caption, sebagai **Ahli Bebas Herbalife**, ikut polisi syarikat. Tiada nama produk spesifik dengan claim, tiada harga
 - Tiada before/after badan bersebelahan, tiada nombor penimbang, tiada close-up perut, tiada body shaming
 - Testimoni: izin bertulis, kata-kata sebenar client, fokus tabiat & perasaan, + "hasil setiap orang berbeza"
 - **Tidak digunakan dalam video:** bacaan kolesterol/tekanan darah atau kesan kesihatan produk (claim perubatan)
 - Latar rakaman tanpa logo/produk jenama lain
+
+## Objektif
+Ketiga-tiga: cari client, edukasi, cari business partner. Satu video = satu objektif = satu CTA. Pusingkan ikut siri 3 video.
 
 ## Waktu posting
 10.00 pagi · 1.00 petang · 9.00 malam

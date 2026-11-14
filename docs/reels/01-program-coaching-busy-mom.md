@@ -4,7 +4,8 @@
 
 - **Objektif:** cari client · **CTA:** Komen **INFO**
 - **Format:** V8 tawaran terus 5 blok · 45 saat · 9:16
-- **Nama Herbalife:** dalam caption sahaja ("Ahli Bebas Herbalife")
+- **Nama Herbalife:** disebut dalam video dan caption sebagai "Ahli Bebas Herbalife" (tiada nama produk spesifik, tiada harga)
+- **Siri:** video 1 daripada 3 (1 = cari client · 2 = edukasi · 3 = business partner)
 
 ## 1 · Skrip & jadual
 
@@ -18,7 +19,7 @@ Hook = dirakam berulang sampai bersih. Selebihnya cakap natural ikut poin.
 | 9–12s | "malam makan apa yang ada. Lepas tu rasa bersalah." | — | Muka Coach, lebar 100% (X4) | bersalah | — |
 | 12–18s | "Okay, so macam ni. Dalam coaching I, meal plan ikut jadual you. Bukan you yang kena kejar jadual diet." | **IKUT JADUAL YOU** | Skrin belah: kiri "jadual diet" dibekukan hitam-putih ⏸, kanan jadual sebenar ibu (D4) | meal plan · jadual you | whoosh pada belah |
 | 18–24s | "You dapat meal plan personal, check-in dalam WhatsApp, dengan group coaching setiap bulan." | — | **HERO G8:** 3 kad terbang dari tapak tangan Coach: MEAL PLAN · CHECK-IN · GROUP COACHING | personal · WhatsApp · setiap bulan | pop × 3 |
-| 24–27s | "I dah 13 tahun dalam wellness, and I pun mak kepada 4 orang anak. So I faham." | **13 TAHUN · 4 ANAK** | Muka Coach + nombor besar lutsinar "13" (T4) | 13 tahun · 4 | pop pada 13 |
+| 24–27s | "I dah 13 tahun sebagai Ahli Bebas Herbalife dan wellness coach, and I pun mak kepada 4 orang anak. So I faham." | **13 TAHUN · 4 ANAK** + label kecil "Ahli Bebas Herbalife" | Muka Coach + nombor besar lutsinar "13" (T4) | 13 tahun · 4 | pop pada 13 |
 | 27–33s | "Program ni sesuai kalau you nak start kecil dan makan dengan family. Tak sesuai kalau you cari cara cepat." | ✓ start kecil · ✕ cara cepat | Senarai semak ringkas S1 (✓ / ✕) | start kecil · family · cepat | — |
 | 33–36s | "Start where you are." | — | Tolak masuk perlahan ke 106%, tahan (X3), tiada B-roll | start | sunyi sekejap |
 | 36–40s | "Ada client I, dulu selalu makan goreng dan manis. Sekarang dia cakap lebih selesa bergerak, even masa duduk solat." | cip **PENGALAMAN SEBENAR · dengan izin** + "Hasil setiap orang berbeza" | Petikan client (skrin chat dikaburkan nama) (B4) | goreng · manis · selesa | — |
