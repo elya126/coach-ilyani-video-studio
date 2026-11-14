@@ -20,3 +20,5 @@ export * from "./VideoShell";
 export * from "./Watermark";
 export * from "./HighlightText";
 export * from "./HookScene";
+export * from "./ReelCaptions";
+export * from "./ReelBeats";

@@ -18,8 +18,11 @@ Beautiful, on-brand vertical videos for **Instagram Reels, TikTok and Facebook R
 | Lifestyle Reel | `LifestyleReel` | `src/content/lifestyle.ts` | 35.5 s |
 | Client Transformation | `ClientTransformation` | `src/content/transformation.ts` | 32.5 s |
 | Product Education | `ProductEducation` | `src/content/productEducation.ts` | 36.5 s |
+| **Coach Reel** (talking reel with timed captions, b-roll, graphics) | `Reel01-ProgramCoaching` | `src/content/reels/reel01-program-coaching.ts` | 45 s |
 
 ---
+
+> 🇲🇾 **Panduan Bahasa Melayu untuk beginner:** [`docs/PANDUAN-LAPTOP.md`](docs/PANDUAN-LAPTOP.md)
 
 ## 1. One-time setup
 

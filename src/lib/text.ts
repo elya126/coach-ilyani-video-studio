@@ -24,7 +24,7 @@ export const parseHighlights = (input: string): TextPart[] => {
  */
 export type Word = { parts: TextPart[]; highlight: boolean };
 
-export const toWords = (input: string): Word[] => {
+export const toWords = (input: string, keepHighlightPhrases = false): Word[] => {
   const words: Word[] = [];
   let current: TextPart[] = [];
   const flush = () => {
@@ -32,7 +32,9 @@ export const toWords = (input: string): Word[] => {
     current = [];
   };
   for (const part of parseHighlights(input)) {
-    for (const token of part.text.split(/(\s+)/)) {
+    // e.g. "**meal plan**" stays together as one caption unit
+    const tokens = keepHighlightPhrases && part.highlight ? [part.text] : part.text.split(/(\s+)/);
+    for (const token of tokens) {
       if (!token) continue;
       if (/^\s+$/.test(token)) flush();
       else current.push({ text: token, highlight: part.highlight });

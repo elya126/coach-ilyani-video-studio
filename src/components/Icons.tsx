@@ -40,3 +40,10 @@ export const QuoteIcon: React.FC<IconProps> = ({ size = 72, color }) => (
     <path d="M6 38V26c0-9 4-15 13-18l2 4c-5 2-7 5-7.5 10H20v16H6zm22 0V26c0-9 4-15 13-18l2 4c-5 2-7 5-7.5 10H42v16H28z" />
   </svg>
 );
+
+export const PauseIcon: React.FC<IconProps> = ({ size = 48, color }) => (
+  <svg width={size} height={size} viewBox="0 0 48 48" fill={color}>
+    <rect x="12" y="9" width="8" height="30" rx="2" />
+    <rect x="28" y="9" width="8" height="30" rx="2" />
+  </svg>
+);

@@ -22,6 +22,7 @@ import {
   transformationSchema,
 } from "./templates/ClientTransformation";
 import { ProductEducation, calculateProductMetadata, productSchema } from "./templates/ProductEducation";
+import { CoachReel, calculateCoachReelMetadata, coachReelSchema } from "./templates/CoachReel";
 
 import { educationalContent } from "./content/educational";
 import { talkingHeadContent } from "./content/talkingHead";
@@ -29,6 +30,7 @@ import { nutritionTipsContent } from "./content/nutritionTips";
 import { lifestyleContent } from "./content/lifestyle";
 import { transformationContent } from "./content/transformation";
 import { productEducationContent } from "./content/productEducation";
+import { reel01Content } from "./content/reels/reel01-program-coaching";
 
 const common = {
   width: VIDEO.width,
@@ -39,6 +41,18 @@ const common = {
 };
 
 export const RemotionRoot: React.FC = () => (
+  <>
+  {/* Reel bercakap Coach — satu <Composition> untuk setiap reel */}
+  <Folder name="Coach-Reels">
+    <Composition
+      id="Reel01-ProgramCoaching"
+      component={CoachReel}
+      schema={coachReelSchema}
+      defaultProps={reel01Content}
+      calculateMetadata={calculateCoachReelMetadata}
+      {...common}
+    />
+  </Folder>
   <Folder name="Coach-Ilyani">
     <Composition
       id="EducationalReel"
@@ -89,4 +103,5 @@ export const RemotionRoot: React.FC = () => (
       {...common}
     />
   </Folder>
+  </>
 );

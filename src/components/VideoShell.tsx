@@ -23,13 +23,23 @@ export const VideoShell: React.FC<{
   overFootage?: boolean;
   showBackground?: boolean;
   duckMusic?: boolean;
+  watermarkPosition?: "bottom-left" | "bottom-right" | "top-left" | "top-right";
   children: React.ReactNode;
-}> = ({ theme, audio, sceneSeconds = [], overFootage = false, showBackground = true, duckMusic = false, children }) => (
+}> = ({
+  theme,
+  audio,
+  sceneSeconds = [],
+  overFootage = false,
+  showBackground = true,
+  duckMusic = false,
+  watermarkPosition,
+  children,
+}) => (
   <ThemeProvider theme={theme}>
     <AbsoluteFill>
       {showBackground ? <BrandBackground /> : null}
       {children}
-      <Watermark forceLight={overFootage} />
+      <Watermark forceLight={overFootage} position={watermarkPosition} />
       <ProgressBar />
       <AudioLayer audio={audio} sceneStarts={sceneStartFrames(sceneSeconds)} duck={duckMusic} />
       <DurationWarning />

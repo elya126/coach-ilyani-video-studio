@@ -5,9 +5,12 @@ import { fonts } from "../config/theme";
 import { useTheme } from "./ThemeContext";
 
 /** Subtle @coachilyani handle. Settings: studio.config.ts → watermark. */
-export const Watermark: React.FC<{ forceLight?: boolean }> = ({ forceLight }) => {
+type Corner = "bottom-left" | "bottom-right" | "top-left" | "top-right";
+
+export const Watermark: React.FC<{ forceLight?: boolean; position?: Corner }> = ({ forceLight, position: override }) => {
   const theme = useTheme();
-  const { show, text, opacity, position } = studioConfig.watermark;
+  const { show, text, opacity } = studioConfig.watermark;
+  const position = override ?? studioConfig.watermark.position;
   if (!show) return null;
 
   const [vertical, horizontal] = position.split("-") as ["top" | "bottom", "left" | "right"];

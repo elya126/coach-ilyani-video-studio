@@ -14,6 +14,7 @@ import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/500.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
+import "@fontsource/montserrat/800.css";
 
 const FONT_FACES = [
   '400 1em "Playfair Display"',
@@ -25,6 +26,7 @@ const FONT_FACES = [
   '500 1em "Montserrat"',
   '600 1em "Montserrat"',
   '700 1em "Montserrat"',
+  '800 1em "Montserrat"',
 ];
 
 if (typeof document !== "undefined") {

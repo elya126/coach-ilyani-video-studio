@@ -98,7 +98,8 @@ coach-ilyani-video-studio/
     │   ├── NutritionTips.tsx        ← "instead of → try" swap cards
     │   ├── LifestyleReel.tsx        ← b-roll montage + quote card
     │   ├── ClientTransformation.tsx ← consent-first client story
-    │   └── ProductEducation.tsx     ← what it is, how to use, label facts, good to know
+    │   ├── ProductEducation.tsx     ← what it is, how to use, label facts, good to know
+    │   └── CoachReel.tsx            ← talking reel: zooms, b-roll cut-ins, timed graphics (ReelBeats), 3–4-word captions (ReelCaptions)
     │
     └── content/              ← THE WORDS of each video (sample content included)
         ├── shared.ts         ← default audio, follow CTA, general disclaimer
@@ -107,7 +108,8 @@ coach-ilyani-video-studio/
         ├── nutritionTips.ts  ← sample in Bahasa Melayu
         ├── lifestyle.ts
         ├── transformation.ts ← placeholders only — needs a real, consented story
-        └── productEducation.ts ← placeholders for label values
+        ├── productEducation.ts ← placeholders for label values
+        └── reels/            ← one file per Coach Reel (reel01-program-coaching.ts …)
 ```
 
 ## How a template works

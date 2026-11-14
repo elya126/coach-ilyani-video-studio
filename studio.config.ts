@@ -118,6 +118,19 @@ export const studioConfig = {
   },
 
   // ----------------------------------------------------------
+  // REEL CAPTIONS (used by the "Coach Reel" talking template)
+  // ----------------------------------------------------------
+  reelCaptions: {
+    wordsPerLine: 4, // 3–4 words on screen at a time
+    size: 58,
+    activeColor: "#C9A96E", // the word being spoken lights up gold
+    textColor: "#FFFFFF",
+    keywordColor: "#FFFFFF", // **keywords**: white, bigger, with a small bounce
+    keywordScale: 1.3,
+    bottom: 430, // distance from the bottom of the video (px)
+  },
+
+  // ----------------------------------------------------------
   // AUDIO (0 = silent, 1 = full volume)
   // ----------------------------------------------------------
   audio: {
