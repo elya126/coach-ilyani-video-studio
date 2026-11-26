@@ -1,6 +1,6 @@
 # DRAF Video 02 · Skip sarapan (gaya chibi, pop-up)
 
-Status: DRAF, belum dibina. Tunggu kelulusan Coach.
+Status: SIAP (video-chibi-sarapan.mp4). Coach akan rakam suara sendiri ikut lajur "Ayat Coach" dan masa.
 
 - Panjang: ±35 saat, 9:16
 - Karakter: chibi (no. 3), muncul sebagai POP-UP kecil di penjuru dengan belon kata, bukan penuh skrin
@@ -37,3 +37,8 @@ Komen MULA, saya share idea sarapan protein saya.
 #sarapansihat #wanita35plus #turunberatbadan
 
 Semakan ✓ harga 0 · produk 0 · janji kg 0 · claim ubat 0 · CTA satu · ada lawan (skip sarapan) · ayat quotable ada
+
+## Rakam suara (CapCut)
+1. Import `video-chibi-sarapan.mp4`, kemudian tekan Audio → Rakam.
+2. Baca lajur "Ayat Coach" ikut masa (sari kata dalam video jadi panduan).
+3. Kecilkan bunyi asal video ke ±30% supaya suara Coach jelas.

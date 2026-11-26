@@ -14,3 +14,5 @@ Coach Ilyani ada karakter kartun sendiri. Semua butiran dalam `karakter/KAD-KARA
 - Semak potongan karakter sebelum guna: kepala dan tudung mesti penuh, tidak terpotong.
 - Karakter sebagai POP-UP kecil dengan belon kata, bukan penuh skrin. Skrin utama: banyak ayat dan gambar yang bercerita tentang topik.
 - Fail karakter sedia guna: `karakter/karakter-chibi.png`, `karakter/karakter-3d-separuh.png`.
+- Watermark "Coach Ilyani" (pil, kiri atas) dalam setiap video. "Get Fit Now" kecil di kanan atas.
+- Coach rakam suara sendiri: hantar video tanpa suara, dengan sari kata ikut skrip sebagai panduan masa.

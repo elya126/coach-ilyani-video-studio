@@ -8,7 +8,7 @@ const path = require('path');
   await p.goto('file://' + dir + '/video.html'); await p.waitForTimeout(500);
   const DUR = await p.evaluate(() => window.DUR);
   if (stills) {
-    for (const t of [0.6, 3.5, 7.5, 11.8, 15.5, 18.5, 22]) {
+    for (const t of (process.env.TS||"0.6,3.5,7.5,11.8,15.5,18.5,22").split(",").map(Number)) {
       await p.evaluate(t => render(t), t); await p.screenshot({ path: `${process.env.OUT}/still-${t}.png` });
     }
   } else {

@@ -1,0 +1,150 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Inter;src:url(file:///usr/share/fonts/opentype/inter/Inter-Black.otf);font-weight:900}
+@font-face{font-family:Inter;src:url(file:///usr/share/fonts/opentype/inter/Inter-ExtraBold.otf);font-weight:800}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif;background:#13241a}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;
+  background:radial-gradient(circle at 50% 40%,#24402f 0%,#13241a 60%,#0b130e 100%)}
+.abs{position:absolute}
+#bgblur{inset:-60px;background-size:cover;background-position:center;filter:blur(40px) brightness(.45);opacity:0}
+.photo{left:70px;top:590px;width:940px;height:790px;border-radius:44px;overflow:hidden;
+  box-shadow:0 30px 70px rgba(0,0,0,.5);border:4px solid rgba(255,255,255,.9)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform-origin:50% 50%}
+.title{left:50px;right:50px;top:180px;height:360px;display:flex;align-items:center;justify-content:center;
+  text-align:center;color:#fff;font-weight:900;font-size:92px;line-height:1.08;letter-spacing:-1px;
+  text-shadow:0 6px 24px rgba(0,0,0,.45)}
+.title .y{color:#F7E57C}.title .l{color:#C6FF3B}
+.title .s{position:relative;color:#F7E57C;white-space:nowrap;display:inline-block}
+.title .s i{position:absolute;left:-8px;top:50%;height:12px;background:#ff5a5a;border-radius:6px}
+#card3 .s{position:relative;white-space:nowrap;display:inline-block}
+#card3 .s i{position:absolute;left:-8px;top:50%;height:14px;background:#ff5a5a;border-radius:7px}
+#card3{left:70px;top:590px;width:940px;height:480px;border-radius:44px;background:rgba(10,18,13,.75);
+  border:2px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;
+  color:#fff;font-weight:900;font-size:104px;text-align:center;line-height:1.3}
+#cycle{left:290px;top:780px;width:500px;height:500px}
+#cta{left:110px;right:110px;top:720px;padding:46px 20px;white-space:nowrap;border-radius:44px;background:#C6FF3B;color:#0f1a14;
+  font-weight:900;font-size:104px;text-align:center;box-shadow:0 20px 70px rgba(198,255,59,.4)}
+#chibiWrap{width:360px;height:740px;transform-origin:50% 100%}
+#chibi{width:100%;filter:drop-shadow(0 18px 24px rgba(0,0,0,.45))}
+#bubble{background:#fff;color:#13241a;font-weight:900;font-size:50px;padding:22px 34px;border-radius:40px;white-space:nowrap;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);transform-origin:50% 100%}
+#bubble:after{content:"";position:absolute;bottom:-22px;width:0;height:0;border:16px solid transparent;border-top:24px solid #fff}
+#bubble.r:after{right:70px}#bubble.l:after{left:70px}
+#subbg{left:0;right:0;bottom:0;height:380px;background:linear-gradient(to top,rgba(0,0,0,.8),rgba(0,0,0,0))}
+#sub{left:50px;right:50px;bottom:200px;text-align:center;font-weight:900;font-size:66px;color:#fff;line-height:1.15}
+#sub span{display:inline-block;margin:0 8px}
+#sub .on{color:#C6FF3B}#sub .kw{color:#F7E57C}
+#wm1{left:44px;top:56px;padding:14px 26px;border-radius:40px;background:rgba(0,0,0,.35);border:2px solid #C6FF3B;
+  color:#fff;font-weight:900;font-size:36px}
+#wm1 b{color:#C6FF3B}
+#wm2{right:44px;top:70px;color:rgba(255,255,255,.75);font-weight:800;font-size:28px}
+#wm2 b{color:#C6FF3B}
+</style></head><body><div id="stage">
+<div id="bgblur" class="abs"></div>
+<div id="ph" class="abs photo"><img class="pi" id="pi1" src="img/s1.jpg" style="display:none"><img class="pi" id="pi2" src="img/s2.jpg" style="display:none"><img class="pi" id="pi3" src="img/s3.jpg" style="display:none"><img class="pi" id="pi4" src="img/s4.jpg" style="display:none"><img class="pi" id="pi5" src="img/s5.jpg" style="display:none"><img class="pi" id="pi6" src="img/s6.jpg" style="display:none"></div>
+<div id="title" class="abs title"></div>
+<div id="card3" class="abs"><div>Lapar =<br><span class="s" style="color:#F7E57C">lemak terbakar<i id="strike"></i></span></div></div>
+<svg id="cycle" class="abs" viewBox="0 0 500 500">
+  <defs><marker id="ah" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#F7E57C"/></marker></defs>
+  <circle cx="250" cy="250" r="200" fill="rgba(10,18,13,.55)"/>
+  <path id="cyc" d="M250,70 A180,180 0 1,1 249,70" fill="none" stroke="#F7E57C" stroke-width="14" stroke-linecap="round" marker-end="url(#ah)" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  <text x="250" y="235" fill="#fff" font-family="Inter" font-weight="900" font-size="54" text-anchor="middle">Skip</text>
+  <text x="250" y="300" fill="#C6FF3B" font-family="Inter" font-weight="900" font-size="40" text-anchor="middle">ulang lagi</text>
+</svg>
+<div id="cta" class="abs">Komen MULA</div>
+<div id="chibiWrap" class="abs"><img id="chibi" src="../../karakter/karakter-chibi.png"></div>
+<div id="bubble" class="abs r"></div>
+<div id="subbg" class="abs"></div>
+<div id="sub" class="abs"></div>
+<div id="wm1" class="abs">Coach <b>Ilyani</b></div>
+<div id="wm2" class="abs">Get Fit <b>Now</b></div>
+</div>
+<script>
+const DUR=35;
+// scenes: [start,end,title html,image index or null]
+const SC=[
+ [0,3,'Skip sarapan.<br>Petang <span class="y">kuih 3 ketul.</span>',1],
+ [3,7,'Pagi:<br><span class="y">kopi O</span> je.',2],
+ [7,11,'Mereka fikir…',null],
+ [11,15,'<span class="y" style="font-size:200px">4PM</span>',3],
+ [15,19,'Skip → Lapar →<br><span class="y">Balas dendam</span>',4],
+ [19,25,'2 telur + 1 pisang<br>= <span class="l">235 kcal</span>',5],
+ [25,29,'Petang <span class="l">tenang.</span>',6],
+ [29,32,'Sarapan bukan musuh.<br><span class="l">Lapar</span> yang jadi musuh.',null],
+ [32,35,'Idea sarapan<br><span class="y">protein</span> saya?',5],
+];
+// chibi pop-ups: [start,end,side,text]
+const CH=[[0.4,3.0,'r','Pernah?'],[7.6,11,'l','Eh, tak la…'],[15.6,19,'r','Pusing-pusing…'],[20.2,25,'l','Senang je!'],[32.4,35.5,'c','Jumpa dalam komen!']];
+const SUBS=[
+ [0,1.5,'Skip sarapan',1],[1.5,3,'petang kuih 3 ketul',2],
+ [3,5,'Pagi kopi O je',2],[5,7,'konon jimat calorie',2],
+ [7,9,'Mereka ingat lapar tu',3],[9,11,'tanda lemak terbakar',1],
+ [11,13,'Pukul 4 petang',1],[13,15,'lapar tu balas dendam',2],
+ [15,17,'Malam nasi tambah',2],[17,19,'esok skip sarapan lagi',1],
+ [19,21,'Cuba esok',1],[21,23,'sarapan ada protein',2],[23,25,'2 telur rebus satu pisang',0],
+ [25,27,'Kenyang lebih lama',0],[27,29,'petang tak kalut cari kuih',4],
+ [29,30.5,'Sarapan bukan musuh',2],[30.5,32,'Lapar yang jadi musuh',0],
+ [32,33.4,'Komen MULA',1],[33.4,35,'saya share idea sarapan',3],
+];
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>1-Math.pow(1-cl(x),3);
+const back=x=>{x=cl(x);const c=1.9;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+function env(t,a,b,fi=0.3,fo=0.25){return Math.min(cl((t-a)/fi),cl((b-t)/fo))}
+window.render=function(t){
+  const s=SC.find(q=>t>=q[0]&&t<q[1])||SC[SC.length-1];
+  const k=(t-s[0])/(s[1]-s[0]);
+  // title
+  const T=$('title'); if(T.dataset.h!==s[2]){T.innerHTML='<div>'+s[2]+'</div>';T.dataset.h=s[2]}
+  const ti=back((t-s[0])/0.4); T.style.opacity=env(t,s[0],s[1]+(s===SC[8]?1:0),0.15,0.2);
+  T.style.transform=`translateY(${(1-ti)*-40}px) scale(${0.75+0.25*ti})`;
+  const isQ=s===SC[7]; T.style.top=isQ?'640px':'180px'; T.style.fontSize=isQ?'104px':'92px';
+  // photo with Ken Burns (max 106%) and slide-in
+  const ph=$('ph'); let img=null;
+  if(s[3]){ph.style.display='';for(let i=1;i<=6;i++)$('pi'+i).style.display=i===s[3]?'':'none';img=$('pi'+s[3]);const src=`img/s${s[3]}.jpg`;if($('bgblur').dataset.s!==src){$('bgblur').style.backgroundImage=`url(${src})`;$('bgblur').dataset.s=src}
+    const pi=ease((t-s[0])/0.4); ph.style.opacity=env(t,s[0],s[1]+(s===SC[8]?1:0),0.2,0.2);
+    ph.style.transform=`translateX(${(1-pi)*120}px) rotate(${(1-pi)*3}deg)`;
+    img.style.transform=`scale(${1+0.06*cl(k)})`;
+    $('bgblur').style.opacity=0.9;
+  } else { ph.style.display='none'; $('bgblur').style.opacity=0.35 }
+  if(s===SC[8]) ph.style.filter='brightness(.45)'; else ph.style.filter='';
+  // scene 3 card
+  const c3=$('card3'); const v3=t>=7.3&&t<11; c3.style.display=v3?'':'none';
+  if(v3){const i=back((t-7.3)/0.4);c3.style.opacity=env(t,7.3,11);c3.style.transform=`scale(${0.7+0.3*i})`;
+    $('strike').style.width=(t>9.2?ease((t-9.2)/0.35)*106:0)+'%'}
+  // cycle overlay scene 5
+  const cy=$('cycle'); const v5=t>=16.2&&t<19; cy.style.display=v5?'':'none';
+  if(v5){cy.style.opacity=env(t,16.2,19);$('cyc').setAttribute('stroke-dashoffset',100-ease((t-16.4)/1.6)*100);
+    $('cyc').setAttribute('transform',`rotate(${(t-16.2)*25} 250 250)`)}
+  // CTA
+  const ct=$('cta'); const v9=t>=32; ct.style.display=v9?'':'none';
+  if(v9){const i=back((t-32)/0.4);ct.style.opacity=cl((t-32)/0.15);ct.style.transform=`scale(${(0.3+0.7*i)*(1+Math.sin((t-32)*7.5)*0.03)})`}
+  // chibi pop-up
+  const W=$('chibiWrap'),B=$('bubble'); const c=CH.find(q=>t>=q[0]&&t<q[1]);
+  if(!c){W.style.display='none';B.style.display='none'}
+  else{W.style.display='';B.style.display='';
+    const side=c[2]; const x=side==='r'?700:side==='l'?20:360;
+    const up=back((t-c[0])/0.45), down=ease((c[1]-t)/0.3);
+    const vis=Math.min(up,down<1?down:1);
+    const wig=Math.sin((t-c[0])*2*Math.PI*1.6)*4;
+    W.style.left=x+'px'; W.style.top=(1180+(1-vis)*700)+'px';
+    W.style.transform=`rotate(${wig}deg) scaleX(${side==='l'?-1:1})`;
+    B.textContent=c[3]; B.className='abs '+(side==='l'?'l':'r');
+    const bi=back((t-c[0]-0.25)/0.35);
+    B.style.opacity=Math.min(cl((t-c[0]-0.25)/0.1),down);
+    const bw=B.offsetWidth;
+    let bx=side==='r'?(1040-bw):side==='l'?40:(540-bw/2);
+    B.style.left=bx+'px'; B.style.top='1090px'; B.style.transform=`scale(${0.4+0.6*bi})`;
+  }
+  // subtitles
+  const sub=$('sub'); const ch=SUBS.find(q=>t>=q[0]&&t<q[1]);
+  if(!ch){sub.innerHTML='';return}
+  const ws=ch[2].split(' '),per=(ch[1]-ch[0])/ws.length,cur=Math.floor((t-ch[0])/per);
+  sub.innerHTML=ws.map((w,i)=>{const kw=i===ch[3];let sc=1;const d=t-(ch[0]+i*per);
+    if(kw){if(d>=0&&d<0.3)sc=1+Math.sin(d/0.3*Math.PI)*0.18;else if(d>=0.3)sc=1.08}
+    return `<span class="${kw?'kw':i===cur?'on':''}" style="transform:scale(${sc})">${w}</span>`}).join(' ');
+};
+window.DUR=DUR;
+</script></body></html>
