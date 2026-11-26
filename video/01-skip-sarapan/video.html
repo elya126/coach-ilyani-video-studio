@@ -1,0 +1,146 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Inter;src:url(file:///usr/share/fonts/opentype/inter/Inter-Black.otf);font-weight:900}
+@font-face{font-family:Inter;src:url(file:///usr/share/fonts/opentype/inter/Inter-ExtraBold.otf);font-weight:800}
+@font-face{font-family:Inter;src:url(file:///usr/share/fonts/opentype/inter/Inter-Bold.otf);font-weight:700}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0f1a14;font-family:Inter,sans-serif}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;
+  background:radial-gradient(circle at 50% 38%,#24402f 0%,#13241a 55%,#0b130e 100%)}
+.abs{position:absolute}
+#glow{left:140px;top:520px;width:800px;height:800px;border-radius:50%;
+  background:radial-gradient(circle,rgba(198,255,59,.20),rgba(198,255,59,0) 65%)}
+#char{width:780px;height:auto;left:150px;top:560px;transform-origin:50% 100%;
+  filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))}
+#wm{right:44px;top:56px;color:rgba(255,255,255,.75);font-weight:800;font-size:30px;letter-spacing:1px}
+#wm b{color:#C6FF3B}
+.head{left:60px;right:60px;text-align:center;color:#fff;font-weight:900;line-height:1.05;letter-spacing:-1px}
+#h1{top:170px;font-size:96px}
+#h1 .y{color:#F7E57C}
+#h1sub{top:400px;font-size:42px;font-weight:700;color:rgba(255,255,255,.85)}
+.card{background:rgba(10,18,13,.72);border:2px solid rgba(255,255,255,.14);border-radius:36px;
+  backdrop-filter:blur(8px);color:#fff;font-weight:900;text-align:center}
+#c1{left:70px;top:190px;width:940px;padding:44px 30px;font-size:78px;line-height:1.3}
+#c1 .strike{position:relative;color:#F7E57C;white-space:nowrap;display:inline-block}
+#c1 .line{position:absolute;left:-10px;top:52%;height:12px;background:#ff5a5a;border-radius:6px}
+#big4{left:0;right:0;top:120px;text-align:center;font-weight:900;font-size:300px;color:#F7E57C;line-height:1;
+  text-shadow:0 12px 40px rgba(0,0,0,.5)}
+#big4 small{font-size:110px;color:#fff}
+.chip{top:470px;padding:20px 34px;border-radius:60px;background:#fff;color:#13241a;font-weight:900;font-size:46px}
+#eggs{left:0;right:0;top:150px;display:flex;justify-content:center;gap:40px}
+.egg{width:200px;height:250px;border-radius:50% 50% 50% 50%/58% 58% 42% 42%;background:#fffaf0;position:relative;
+  box-shadow:inset -14px -18px 0 rgba(0,0,0,.08),0 14px 30px rgba(0,0,0,.4)}
+.egg i{position:absolute;left:45px;top:85px;width:110px;height:110px;border-radius:50%;background:#ffc93c;
+  box-shadow:inset -8px -10px 0 rgba(0,0,0,.1)}
+#kcal{left:0;right:0;top:440px;text-align:center;color:#fff;font-weight:900;font-size:110px}
+#kcal b{color:#F7E57C}
+#q{left:60px;right:60px;top:180px;color:#fff;font-weight:900;font-size:92px;line-height:1.08;text-align:center}
+#q .l{color:#C6FF3B}
+#cta{left:140px;right:140px;top:250px;padding:46px 20px;border-radius:40px;background:#C6FF3B;color:#0f1a14;
+  font-weight:900;font-size:108px;text-align:center;box-shadow:0 20px 60px rgba(198,255,59,.35)}
+#ctasub{left:60px;right:60px;top:500px;text-align:center;color:#fff;font-weight:800;font-size:48px}
+#subbg{left:0;right:0;bottom:0;height:430px;background:linear-gradient(to top,rgba(0,0,0,.78),rgba(0,0,0,0))}
+#sub{left:60px;right:60px;bottom:250px;text-align:center;font-weight:900;font-size:72px;color:#fff;line-height:1.15}
+#sub span{display:inline-block;margin:0 10px}
+#sub .on{color:#C6FF3B}
+#sub .kw{color:#F7E57C}
+#label{left:44px;top:56px;color:rgba(255,255,255,.55);font-weight:800;font-size:24px;letter-spacing:2px}
+</style></head>
+<body><div id="stage">
+  <div id="glow" class="abs"></div>
+  <img id="char" class="abs" src="../../karakter/karakter-3d-separuh.png">
+  <div id="h1" class="abs head">Skip <span class="y">sarapan</span><br>nak kurus?</div>
+  <div id="h1sub" class="abs head">(anda 35+ tengok ni)</div>
+  <div id="c1" class="abs card">Lapar =<br><span class="strike">lemak terbakar<span class="line"></span></span></div>
+  <div id="big4" class="abs">4<small>PM</small></div>
+  <div id="chipA" class="abs chip">teh tarik</div>
+  <div id="chipB" class="abs chip">kuih 3 ketul</div>
+  <div id="chipC" class="abs chip">nasi tambah</div>
+  <div id="eggs" class="abs"><div class="egg"><i></i></div><div class="egg"><i></i></div></div>
+  <div id="kcal" class="abs">= <b>140</b> kcal</div>
+  <div id="q" class="abs">Sarapan bukan musuh.<br><span class="l">Lapar</span> yang jadi musuh.</div>
+  <div id="cta" class="abs">Komen MULA</div>
+  <div id="ctasub" class="abs">idea sarapan protein saya</div>
+  <div id="subbg" class="abs"></div>
+  <div id="sub" class="abs"></div>
+  <div id="wm" class="abs">Get Fit <b>Now</b></div>
+  <div id="label" class="abs">COACH ILYANI</div>
+</div>
+<script>
+const DUR=22.5;
+// subtitle chunks: [start,end,text,keywordIndex]
+const SUBS=[
+ [0.0,1.5,"Skip sarapan konon",1],
+ [1.5,2.8,"nak kurus",1],
+ [2.8,4.9,"anda 35 ke atas tengok ni",1],
+ [4.9,6.7,"Mereka ingat lapar tu",3],
+ [6.7,8.5,"tanda lemak terbakar",1],
+ [8.5,10.4,"Pukul 4 petang",1],
+ [10.4,12.5,"lapar tu balas dendam",2],
+ [12.5,14.4,"Esok sarapan ada protein",3],
+ [14.4,16.5,"2 telur rebus 140 kcal",3],
+ [16.5,18.0,"Sarapan bukan musuh",2],
+ [18.0,19.6,"Lapar yang jadi musuh",0],
+ [19.6,21.2,"Komen MULA",1],
+ [21.2,22.5,"saya share idea sarapan saya",3],
+];
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>1-Math.pow(1-cl(x),3);
+const back=x=>{x=cl(x);const c=1.9;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+// visibility envelope with pop-in scale
+function pop(el,t,a,b,{dy=0,from=0.6}={}){
+  const vis=t>=a&&t<b; el.style.display=vis?'':'none'; if(!vis)return;
+  const i=back((t-a)/0.35), o=ease((b-t)/0.25);
+  const s=from+(1-from)*i;
+  el.style.opacity=Math.min(cl((t-a)/0.15),o);
+  el.style.transform=`translateY(${(1-i)*dy}px) scale(${s})`;
+}
+function lerp(a,b,x){return a+(b-a)*x}
+// character keyframes: [time,x,y,scale,rot]
+const CK=[[0,150,1300,1.0,0],[0.45,150,560,1.0,0],[4.9,150,560,1.0,0],[5.3,380,700,0.85,0],[8.5,380,700,0.85,0],
+ [8.9,-120,760,0.8,0],[12.5,-120,760,0.8,0],[12.9,360,760,0.8,0],[16.5,360,760,0.8,0],[16.9,150,620,0.95,0],
+ [19.6,150,620,0.95,0],[20.0,150,700,0.9,0],[22.5,150,700,0.9,0]];
+function charAt(t){
+  for(let k=0;k<CK.length-1;k++){const A=CK[k],B=CK[k+1];
+    if(t>=A[0]&&t<=B[0]){const x=k===0?back((t-A[0])/(B[0]-A[0])):ease((t-A[0])/(B[0]-A[0]));
+      return A.slice(1).map((v,j)=>lerp(v,B[j+1],x));}}
+  return CK[CK.length-1].slice(1);
+}
+window.render=function(t){
+  // character with idle bob + breathing
+  let [x,y,s,r]=charAt(t);
+  const bob=Math.sin(t*2*Math.PI*0.9)*8, breath=1+Math.sin(t*2*Math.PI*0.45)*0.012;
+  const tilt=Math.sin(t*2*Math.PI*0.5)*1.2;
+  // little "nod" on key words
+  const nods=[0.2,8.6,12.6,16.6,19.7]; let nod=0; for(const n of nods){const d=t-n; if(d>0&&d<0.5) nod=Math.sin(d/0.5*Math.PI)*-3}
+  const c=$('char'); c.style.left=x+'px'; c.style.top=(y+bob)+'px';
+  c.style.transform=`scale(${s*breath}) rotate(${tilt+r+nod}deg)`;
+  $('glow').style.left=(x-10)+'px'; $('glow').style.top=(y-40)+'px';
+  // beats
+  pop($('h1'),t,0.05,4.9,{dy:-40,from:0.7});
+  pop($('h1sub'),t,2.8,4.9,{dy:20});
+  pop($('c1'),t,5.0,8.5,{dy:-30});
+  const ln=document.querySelector('#c1 .line'); ln.style.width=(t>6.8?ease((t-6.8)/0.35)*105:0)+'%';
+  pop($('big4'),t,8.55,12.5,{from:0.2});
+  const chips=[['chipA',10.4,560,470],['chipB',10.9,520,600],['chipC',11.4,600,730]];
+  for(const [id,a,l,tp] of chips){const e=$(id); e.style.left=l+'px'; e.style.top=tp+'px'; pop(e,t,a,12.5,{dy:30,from:0.3});}
+  pop($('eggs'),t,12.55,16.5,{dy:-60,from:0.4});
+  pop($('kcal'),t,14.4,16.5,{from:0.3});
+  pop($('q'),t,16.55,19.6,{dy:-30});
+  pop($('cta'),t,19.65,DUR+1,{from:0.3});
+  if(t>19.65){const p=1+Math.sin((t-19.65)*2*Math.PI*1.2)*0.03; $('cta').style.transform+=` scale(${p})`}
+  pop($('ctasub'),t,21.2,DUR+1,{dy:20});
+  // subtitles: word-by-word lime, keyword yellow
+  const sub=$('sub'); const ch=SUBS.find(q=>t>=q[0]&&t<q[1]);
+  if(!ch){sub.innerHTML='';return}
+  const words=ch[2].split(' '); const per=(ch[1]-ch[0])/words.length; const cur=Math.floor((t-ch[0])/per);
+  sub.innerHTML=words.map((w,i)=>{
+    const kw=i===ch[3]; const on=i===cur;
+    let sc=1; if(kw){const d=t-(ch[0]+i*per); if(d>=0&&d<0.3) sc=1+Math.sin(d/0.3*Math.PI)*0.18; else if(d>=0.3) sc=1.08}
+    return `<span class="${kw?'kw':on?'on':''}" style="transform:scale(${sc})">${w}</span>`}).join(' ');
+};
+window.DUR=DUR;
+render(0);
+</script></body></html>
